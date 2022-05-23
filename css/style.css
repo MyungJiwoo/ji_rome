@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "S-CoreDream-3Light";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "S-CoreDream-6Bold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "S-CoreDream-3Light";
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+#bgImg {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.hidden {
+    display: none;
+}
+
+#username {
+    width: 10px;
+    height: 80px;
+
+    border: none;
+    border-bottom: 4px solid white;
+
+    text-align: center;
+    color: white;
+    background-color: transparent;
+
+    font-size: 30px;
+    font-family: "S-CoreDream-3Light";
+
+    transition: width 1s ease-in-out;
+}
+#username::placeholder {
+    opacity: 0;
+}
+#username:focus::placeholder {
+    opacity: 1;
+    color: white;
+}
+#username:focus {
+    outline: none;
+    width: 400px;
+}
+
+.greeting-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logout {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+
+    background-color: transparent;
+
+    border: none;
+}
+
+.icon {
+    color: white;
+    opacity: 0.15;
+    position: relative;
+    top: 4px;
+
+    transition: all 0.3s;
+}
+.icon:hover {
+    opacity: 1;
+    font-size: 20px;
+}
+
+#greeting {
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    transition: opacity 0.4s;
+    font-weight: 100;
+}
+#greeting:hover {
+    opacity: 1;
+}
+
+#clock {
+    font-family: "S-CoreDream-6Bold";
+    font-size: 100px;
+    color: white;
+
+    margin: 20px;
+}

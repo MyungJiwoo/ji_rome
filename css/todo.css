@@ -1,0 +1,98 @@
+.modal {
+    width: 300px;
+    height: 200px;
+    padding: 50px 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 10vh;
+    right: 0;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px 0px 0px 15px;
+
+    overflow: overlay;
+}
+.modal-arrow {
+    position: relative;
+    top: -25px;
+    right: 175px;
+    font-size: 30px;
+    color: white;
+}
+
+#todo-form {
+    /* display: none; */
+}
+
+#todo-input {
+    width: 230px;
+    height: 25px;
+    padding-bottom: 7px;
+
+    position: relative;
+    top: -70px;
+
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: "S-CoreDream-3Light";
+}
+#todo-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    transition: opacity 0.25s;
+}
+#todo-input:focus {
+    outline: none;
+}
+#todo-input:focus::placeholder {
+    opacity: 0;
+}
+
+#todo-list {
+    padding: 0;
+
+    position: relative;
+    top: -70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+li {
+    list-style-type: none;
+    width: 230px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+}
+
+.todo-fin {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.3);
+
+    transition: color 1s;
+}
+.todo-fin:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* --------------------------------- */
+/* .open {
+    right: -350px;
+    height: 0px;
+} */
