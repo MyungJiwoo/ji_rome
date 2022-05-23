@@ -1,5 +1,5 @@
 .modal {
-    width: 300px;
+    width: 30vw;
     height: 200px;
     padding: 50px 50px;
 
@@ -11,16 +11,19 @@
     top: 10vh;
     right: 0;
 
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(71, 71, 71);
     border-radius: 15px 0px 0px 15px;
 
     overflow: overlay;
+    z-index: 10;
 }
-.modal-arrow {
+.checklist {
     position: relative;
-    top: -25px;
-    right: 175px;
-    font-size: 30px;
+    top: -35px;
+    right: 172px;
+    /* top: -5vh;
+    right: 22vw; */
+    font-size: 20px;
     color: white;
 }
 
@@ -29,12 +32,12 @@
 }
 
 #todo-input {
-    width: 230px;
+    width: 22vw;
     height: 25px;
     padding-bottom: 7px;
 
     position: relative;
-    top: -70px;
+    top: -65px;
 
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.8);
@@ -42,7 +45,7 @@
 
     text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 1.8vh;
     font-family: "S-CoreDream-3Light";
 }
 #todo-input::placeholder {
@@ -69,8 +72,8 @@
 
 li {
     list-style-type: none;
-    width: 230px;
-    margin: 10px;
+    width: 21vw;
+    margin: 1vw;
 
     display: flex;
     justify-content: space-between;
@@ -92,7 +95,7 @@ li {
 }
 
 /* --------------------------------- */
-/* .open {
+.open {
     right: -350px;
     height: 0px;
-} */
+}

@@ -6,39 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/todo.css" />
+        <link rel="stylesheet" href="css/quote.css" />
+        <link rel="stylesheet" href="css/weather.css" />
         <title>JIROME</title>
     </head>
     <body>
-        <form class="hidden" id="login-form" autocomplete="off">
-            <!-- form은 submit 될 때마다 새로고침 됨 / 우리는 정보 기억이 목표 -->
-            <input
-                required
-                maxlength="15"
-                type="text"
-                placeholder="What is your name?"
-                id="username"
-            />
-        </form>
-        <div class="greeting-box">
-            <h1 id="greeting" class="hidden"></h1>
-            <button id="logout" class="hidden">
-                <i class="fas fa-sign-out-alt fa-lg icon"></i>
-            </button>
+        <div class="intro-box">
+            <form class="hidden" id="login-form" autocomplete="off">
+                <!-- form은 submit 될 때마다 새로고침 됨 / 우리는 정보 기억이 목표 -->
+                <input
+                    required
+                    maxlength="15"
+                    type="text"
+                    placeholder="Hello! 🙋🏻‍♀️"
+                    id="username"
+                />
+            </form>
+            <div class="greeting-box">
+                <h1 id="greeting" class="hidden"></h1>
+                <button id="logout" class="hidden">
+                    <i class="fas fa-sign-out-alt fa-lg icon"></i>
+                </button>
+            </div>
         </div>
 
         <h2 id="clock">00 : 00 : 00</h2>
 
         <div class="modal open">
-            <div class="modal-arrow">
-                <i class="fas fa-angle-left"></i>
+            <div class="checklist">
+                <i class="fas fa-list-alt"></i>
             </div>
             <form id="todo-form" autocomplete="off">
-                <input
-                    id="todo-input"
-                    type="text"
-                    placeholder="Write a To Do"
-                    required
-                />
+                <input id="todo-input" type="text" placeholder="📝" required />
             </form>
             <ul id="todo-list"></ul>
         </div>
@@ -49,14 +48,14 @@
         </div>
 
         <div id="weather">
-            <span></span>
-            <span></span>
+            <span class="city"></span>
+            <span class="weather"></span>
         </div>
 
         <script src="js/greetings.js"></script>
         <script src="js/clock.js"></script>
         <script src="js/quotes.js"></script>
-        <script src="js/background.js"></script>
+        <!-- <script src="js/background.js"></script> -->
         <script src="js/todo.js"></script>
         <script src="js/weather.js"></script>
         <script src="js/modal.js"></script>
