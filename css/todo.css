@@ -18,11 +18,9 @@
     z-index: 10;
 }
 .checklist {
-    position: relative;
-    top: -35px;
-    right: 172px;
-    /* top: -5vh;
-    right: 22vw; */
+    position: absolute;
+    top: 1vh;
+    left: 0.7vw;
     font-size: 20px;
     color: white;
 }
@@ -35,9 +33,10 @@
     width: 22vw;
     height: 25px;
     padding-bottom: 7px;
+    margin-bottom: 30px;
 
     position: relative;
-    top: -65px;
+    top: -35px;
 
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.8);
@@ -73,7 +72,7 @@
 li {
     list-style-type: none;
     width: 21vw;
-    margin: 1vw;
+    margin: 10px;
 
     display: flex;
     justify-content: space-between;
@@ -96,6 +95,19 @@ li {
 
 /* --------------------------------- */
 .open {
-    right: -350px;
+    right: -33vw;
     height: 0px;
+
+    position: absolute;
+    left: 97vw;
+}
+
+@media screen and (min-width: 370px) {
+    .open {
+        right: -46vw;
+    }
+    .checklist {
+        top: 1vh;
+        left: 3vw;
+    }
 }
