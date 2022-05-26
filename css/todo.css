@@ -1,4 +1,4 @@
-.modal {
+/* .modal {
     width: 30vw;
     height: 200px;
     padding: 50px 50px;
@@ -10,6 +10,9 @@
     position: absolute;
     top: 10vh;
     right: 0;
+    position: relative;
+    bottom: 25vh;
+    left: 63vw;
 
     background-color: rgb(71, 71, 71);
     border-radius: 15px 0px 0px 15px;
@@ -18,15 +21,11 @@
     z-index: 10;
 }
 .checklist {
-    position: absolute;
+    position: relative;
     top: 1vh;
-    left: 0.7vw;
+    right: 80vw;
     font-size: 20px;
     color: white;
-}
-
-#todo-form {
-    /* display: none; */
 }
 
 #todo-input {
@@ -93,7 +92,6 @@ li {
     color: rgb(255, 255, 255);
 }
 
-/* --------------------------------- */
 .open {
     right: -33vw;
     height: 0px;
@@ -110,4 +108,85 @@ li {
         top: 1vh;
         left: 3vw;
     }
+} */
+
+.modal {
+    width: 300px;
+    height: 400px;
+    padding: 10px 10px;
+
+    text-align: center;
+
+    background-color: rgb(131, 131, 131);
+    border-radius: 15px 0px 0px 15px;
+
+    overflow: overlay;
+    z-index: 10;
+
+    position: absolute;
+    right: 0;
+    top: 10vh;
+}
+
+.checklist {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+#todo-input {
+    width: 200px;
+    height: 30px;
+    padding-bottom: 5px;
+    margin-top: 40px;
+
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+
+    color: white;
+    font-size: 17px;
+    font-family: "S-CoreDream-3Light";
+}
+#todo-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    transition: opacity 0.25s;
+}
+#todo-input:focus {
+    outline: none;
+}
+#todo-input:focus::placeholder {
+    opacity: 0;
+}
+
+li {
+    list-style-type: none;
+    width: 79%;
+    margin: 15px 10px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+}
+.todo-fin {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.3);
+
+    transition: color 1s;
+}
+.todo-fin:hover {
+    color: rgb(255, 255, 255);
+}
+
+.open {
+    width: 45px;
+    height: 38px;
+
+    overflow: hidden;
 }
