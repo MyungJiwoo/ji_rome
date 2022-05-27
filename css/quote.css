@@ -4,4 +4,10 @@
 
     font-size: 2vh;
     color: white;
+
+    font-style: italic;
+}
+
+.author {
+    font-size: 13px;
 }
