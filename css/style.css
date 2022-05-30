@@ -29,7 +29,7 @@ body {
 
     overflow: hidden;
 
-    background-color: black;
+    background-color: rgb(255, 245, 160);
 }
 
 #bgImg {
@@ -56,7 +56,7 @@ body {
     height: 50px;
 
     border: none;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid rgb(255, 255, 255);
 
     text-align: center;
     color: white;
@@ -122,7 +122,8 @@ body {
 #clock {
     font-family: "S-CoreDream-6Bold";
     font-size: 6vh;
-    color: white;
+    -webkit-text-stroke: 3px rgb(58, 156, 99);
+    color: rgb(99, 196, 139);
 
     margin: 20px;
 }
