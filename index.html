@@ -15,15 +15,29 @@
         <div class="side">
             <h2 id="clock">00 : 00 : 00</h2>
 
-            <div id="weather">
-                <span class="city"></span>
-                <span class="weather"></span>
+            <div class="side__box">
+                <button id="locateBtn"><i class="fas fa-globe-africa"></i></button>
+                <button id="open__side2"><i class="fas fa-headphones-alt"></i></button>
+
+                <div class="weather__box weather_hidden">
+                    <div id="weather" class="open__weather">
+                        <span class="city"></span>
+                        <span class="weather"></span>
+                    </div>
+                    <div class="open__weather2"></div>
+                </div>
             </div>
+        </div>
+        <div class="side2">
+            Recommend PlayList
+            <button id="closed__side2"></button>
         </div>
 
         <button class="cd__Btn"><i class="fas fa-chevron-down"></i></button>
 
         <div class="cd">
+            <div class="cd__center"></div>
+            <div class="cd__center2"></div>
             <div class="cd__box box__1">
                 <form class="hidden" id="login-form" autocomplete="off">
                     <span id="intro">Hello, What's your name?</span>

@@ -35,7 +35,6 @@ if (savedUsername === null) {
     paintGreetings(savedUsername);
 }
 
-// 추가 실습
 // logout
 function onLogoutSubmit() {
     console.log(savedUsername);
@@ -44,3 +43,19 @@ function onLogoutSubmit() {
 }
 
 logoutBtn.addEventListener("click", onLogoutSubmit);
+
+// closed side2
+const closedBtn = document.querySelector("#closed__side2");
+const openBtn = document.querySelector("#open__side2");
+const side2 = document.querySelector(".side2");
+
+function closed() {
+    side2.style.left = "-36vw";
+}
+
+function open() {
+    side2.style.left = "0";
+}
+
+closedBtn.addEventListener("click", closed);
+openBtn.addEventListener("click", open);

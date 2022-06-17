@@ -11,7 +11,7 @@ function onGeoOk(position) {
         .then((data) => {
             const city = document.querySelector("#weather span:first-child");
             const weather = document.querySelector("#weather span:last-child");
-            city.innerText = data.name;
+            city.innerText = `@ ${data.name} / `;
             weather.innerText = `${data.weather[0].main} / ${data.main.temp}°C`;
         }); // js가 url을 부름 - console의 network에서 문서 확인 가능
 }
@@ -21,3 +21,17 @@ function onGeoError() {
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+
+// ---------------
+const weatherBox = document.querySelector(".weather__box");
+const locateBtn = document.querySelector("#locateBtn");
+
+function openWeatherBox() {
+    weatherBox.classList.remove("weather_hidden");
+}
+function closeWeatherBox() {
+    weatherBox.classList.add("weather_hidden");
+}
+
+locateBtn.addEventListener("mouseover", openWeatherBox);
+locateBtn.addEventListener("mouseleave", closeWeatherBox);
