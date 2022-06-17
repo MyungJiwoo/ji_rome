@@ -4,16 +4,58 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
+        <!-- <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/todo.css" />
         <link rel="stylesheet" href="css/quote.css" />
-        <link rel="stylesheet" href="css/weather.css" />
+        <link rel="stylesheet" href="css/weather.css" /> -->
+        <link rel="stylesheet" href="css/index.css" />
         <title>JIROME</title>
     </head>
     <body>
-        <div class="intro-box">
+        <div class="side">
+            <h2 id="clock">00 : 00 : 00</h2>
+
+            <div id="weather">
+                <span class="city"></span>
+                <span class="weather"></span>
+            </div>
+        </div>
+
+        <button class="cd__Btn"><i class="fas fa-chevron-down"></i></button>
+
+        <div class="cd">
+            <div class="cd__box box__1">
+                <form class="hidden" id="login-form" autocomplete="off">
+                    <span id="intro">Hello, What's your name?</span>
+                    <input required maxlength="15" type="text" placeholder="My name is ..." id="username" />
+                </form>
+                <div class="greeting-box">
+                    <h1 id="greeting" class="hidden"></h1>
+                    <button id="logout" class="hidden">
+                        <i class="fas fa-sign-out-alt fa-lg icon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="cd__box box__2">
+                <form id="todo-form" autocomplete="off">
+                    <input id="todo-input" type="text" placeholder="TODO LIST" required />
+                </form>
+            </div>
+            <div class="cd__box box__3">
+                <ul id="todo-list"></ul>
+            </div>
+            <div class="cd__box box__4">
+                <div id="quote">
+                    <span></span>
+                    <span class="author"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------------------------------------------- -->
+
+        <!-- <div class="intro-box">
             <form class="hidden" id="login-form" autocomplete="off">
-                <!-- form은 submit 될 때마다 새로고침 됨 / 우리는 정보 기억이 목표 -->
                 <input required maxlength="15" type="text" placeholder="Hello! 🙌" id="username" />
             </form>
             <div class="greeting-box">
@@ -44,15 +86,16 @@
         <div id="weather">
             <span class="city"></span>
             <span class="weather"></span>
-        </div>
+        </div> -->
 
         <script src="js/greetings.js"></script>
         <script src="js/clock.js"></script>
         <script src="js/quotes.js"></script>
-        <script src="js/background.js"></script>
+        <!-- <script src="js/background.js"></script> -->
         <script src="js/todo.js"></script>
         <script src="js/weather.js"></script>
         <script src="js/modal.js"></script>
+        <script src="js/rotate.js"></script>
 
         <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
     </body>
