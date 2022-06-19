@@ -310,3 +310,10 @@ body {
 .weather_hidden {
     opacity: 0;
 }
+
+#bgImg {
+    width: 64vw;
+    height: 100%;
+    opacity: 0.3;
+    z-index: -100;
+}

@@ -1,11 +1,9 @@
 const images = [
-    "https://t1.daumcdn.net/cfile/tistory/99A9CA3E5ACCAF6322",
-    "https://i.pinimg.com/originals/d6/42/6b/d6426b150d8635c8a058f393bf7386a1.jpg",
-    "https://blog.kakaocdn.net/dn/dhC2c5/btq3q7ikU19/pUTdRHK4flKsSXKoiTA591/img.jpg",
-    "https://t1.daumcdn.net/cfile/tistory/2408E23B583C9DFB30",
-    "https://img.chuing.net/i/QNeyGHe/%EB%B0%B0%EA%B2%BD%206.jpg",
-    // "1.jpg",
-    // "2.jpg",
+    "https://i.pinimg.com/236x/c1/f8/c7/c1f8c7b0084f4c1231e740708c65be65.jpg",
+    "https://i.pinimg.com/236x/0b/d7/1f/0bd71fe9320173a8d378ba4ae1fcf3fb.jpg",
+    "https://i.pinimg.com/236x/d7/f3/35/d7f3354ba4a6794ca26363e510cb46b2.jpg",
+    "https://i.pinimg.com/236x/25/a8/d2/25a8d281f903d34084abedd24da870e0.jpg",
+    "https://i.pinimg.com/236x/d3/61/ff/d361ffb7941c17a5fc5c54de5b9a676c.jpg",
 ];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
