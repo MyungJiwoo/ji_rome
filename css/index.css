@@ -314,6 +314,6 @@ body {
 #bgImg {
     width: 64vw;
     height: 100%;
-    opacity: 0.3;
+    opacity: 0.15;
     z-index: -100;
 }
