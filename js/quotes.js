@@ -1,59 +1,59 @@
 const quotes = [
     {
-        quote: "Don't dwell on the past.",
-        author: "Author unknown",
+        quote: "바람",
+        author: "최유리",
     },
 
     {
-        quote: "Believe in yourself.",
-        author: "Author unknown",
+        quote: "그래도",
+        author: "최유리",
     },
 
     {
-        quote: "Follow your heart.",
-        author: "Author unknown",
+        quote: "굳은살",
+        author: "최유리",
     },
 
     {
-        quote: "Seize the day.",
-        author: "Author unknown",
+        quote: "예뻤어",
+        author: "Day6",
     },
 
     {
-        quote: "You only live once.",
-        author: "Author unknown",
+        quote: "한 페이지가 될 수 있게",
+        author: "Day6",
     },
 
     {
-        quote: "Past is just past.",
-        author: "Author unknown",
+        quote: "Tick Tock",
+        author: "Day6",
     },
 
     {
-        quote: "Love yourself.",
-        author: "Author unknown",
+        quote: "난춘",
+        author: "새소년",
     },
 
     {
-        quote: "Where there is a  will there is a way",
-        author: "Angela Merkel",
+        quote: "조용히 완전히 영원히",
+        author: "너드커넥션",
     },
 
     {
-        quote: "Don't beat yourself up.",
-        author: "Author unknown",
+        quote: "우리 서로 사랑하지는 말자",
+        author: "기리보이",
     },
 
     {
-        quote: "Life is a journey.",
-        author: "Ralph Waldo Emerson",
+        quote: "나랑 아니면",
+        author: "검정치마",
     },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector("#title");
+const author = document.querySelector("#author");
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = `"${todaysQuote.quote}"`;
+quote.innerText = `🎶 ${todaysQuote.quote}`;
 author.innerText = `- ${todaysQuote.author}`;

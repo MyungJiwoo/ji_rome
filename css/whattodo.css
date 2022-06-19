@@ -1,0 +1,61 @@
+#todo-form {
+    margin-top: 100px;
+}
+
+#todo-input {
+    border: none;
+    width: 400px;
+    height: 100px;
+    font-size: 25px;
+
+    background-color: transparent;
+}
+#todo-input::placeholder {
+    font-family: "NanumSquareRound";
+}
+#todo-input:focus::placeholder {
+    opacity: 0.5;
+    color: white;
+}
+#todo-input:focus {
+    outline: none;
+}
+
+ul {
+    height: 350px;
+    width: 350px;
+    margin-top: 200px;
+
+    overflow: scroll;
+}
+ul::-webkit-scrollbar {
+    display: none;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+li {
+    list-style-type: none;
+    /* width: 79%; */
+    margin: 15px 10px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: rgb(202, 202, 202);
+    color: rgba(245, 245, 245, 0.65);
+}
+.todo-fin {
+    margin-left: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: rgba(100, 100, 100, 0.3);
+
+    transition: color 1s;
+}
+.todo-fin:hover {
+    color: rgb(100, 100, 100);
+}

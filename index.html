@@ -41,27 +41,39 @@
             <div class="cd__box box__1">
                 <form class="hidden" id="login-form" autocomplete="off">
                     <span id="intro">Hello, What's your name?</span>
+                    <hr />
                     <input required maxlength="15" type="text" placeholder="My name is ..." id="username" />
                 </form>
                 <div class="greeting-box">
-                    <h1 id="greeting" class="hidden"></h1>
-                    <button id="logout" class="hidden">
-                        <i class="fas fa-sign-out-alt fa-lg icon"></i>
-                    </button>
+                    <div class="user">
+                        <span id="greeting" class="hidden"></span>
+                        <button id="logout" class="hidden">
+                            <i class="fas fa-sign-out-alt fa-lg icon"></i>
+                        </button>
+                    </div>
+                    <span id="intro2" class="hidden">Have a nice day :)</span>
                 </div>
             </div>
             <div class="cd__box box__2">
                 <form id="todo-form" autocomplete="off">
-                    <input id="todo-input" type="text" placeholder="TODO LIST" required />
+                    <span id="intro">What do you have to do today?</span>
+                    <span id="intro2">Check out the results on the next page.</span>
+                    <hr />
+                    <input id="todo-input" type="text" placeholder="What I'm going to do today is..." required />
                 </form>
             </div>
             <div class="cd__box box__3">
-                <ul id="todo-list"></ul>
+                <ul id="todo-list">
+                    <li>🗒️ ToDo List</li>
+                    <hr />
+                </ul>
             </div>
             <div class="cd__box box__4">
                 <div id="quote">
-                    <span></span>
-                    <span class="author"></span>
+                    <div id="intro3">This is for you.</div>
+                    <hr />
+                    <span id="title"></span>
+                    <span id="author"></span>
                 </div>
             </div>
         </div>

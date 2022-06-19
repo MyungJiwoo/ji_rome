@@ -1,4 +1,5 @@
 @import "whattodo.css";
+@import "playlist.css";
 
 @font-face {
     font-family: "NanumSquareRound";
@@ -194,13 +195,27 @@ body {
     /* top: 100px; */
     left: 1000px;
     transform: rotate(90deg);
+    flex-direction: column;
 }
 
 /* greeting */
-#intro {
+#intro,
+#greeting {
     display: block;
     font-size: 30px;
+
+    color: rgba(245, 245, 245, 0.65);
 }
+#intro2 {
+    display: block;
+    font-size: 18px;
+    color: rgba(245, 245, 245, 0.65);
+}
+
+#login-form {
+    margin-top: 50px;
+}
+
 #username {
     border: none;
     width: 400px;
@@ -218,6 +233,41 @@ body {
 }
 #username:focus {
     outline: none;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.greeting-box {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#logout {
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+
+    background-color: transparent;
+
+    border: none;
+}
+
+.icon {
+    color: white;
+    opacity: 0.15;
+    position: relative;
+    top: 3px;
+
+    transition: all 0.3s;
+}
+.icon:hover {
+    opacity: 1;
+    font-size: 20px;
 }
 
 /* clock */
