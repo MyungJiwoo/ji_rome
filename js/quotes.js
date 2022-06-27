@@ -48,6 +48,56 @@ const quotes = [
         quote: "나랑 아니면",
         author: "검정치마",
     },
+
+    {
+        quote: "SO WHAT",
+        author: "STAYC",
+    },
+
+    {
+        quote: "notitle",
+        author: "김수영",
+    },
+
+    {
+        quote: "비워내려고 합니다",
+        author: "김수영",
+    },
+
+    {
+        quote: "0415",
+        author: "백예린",
+    },
+
+    {
+        quote: "여름가을겨울 봄.",
+        author: "잔나비",
+    },
+
+    {
+        quote: "Every Second",
+        author: "Mina Okabe",
+    },
+
+    {
+        quote: "사랑이 잘 (With 오혁)",
+        author: "아이유",
+    },
+
+    {
+        quote: "Movie",
+        author: "문율 (MoonYul)",
+    },
+
+    {
+        quote: "우리가 맞다는 대답을 할 거예요",
+        author: "이강승",
+    },
+
+    {
+        quote: "그건 아마 우리의 잘못은 아닐거야",
+        author: "백예린",
+    },
 ];
 
 const quote = document.querySelector("#title");

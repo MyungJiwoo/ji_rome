@@ -34,7 +34,14 @@
     padding: 10px 15px;
 
     border-radius: 20px;
-    /* box-shadow: 0px 0px 10px rgba(192, 192, 192, 0.178); */
+
+    transition: all 0.18s ease-in-out;
+}
+.music:not(:hover) {
+    transform: scale(0.95);
+}
+.music:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .music__img img {
