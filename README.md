@@ -1,5 +1,7 @@
 ## JiRome
 
+https://myungjiwoo.github.io/ji_rome/
+
 1. main (로그인)
    ![1](https://user-images.githubusercontent.com/63100324/179879574-16ed847b-8e32-4b56-a738-1f96af219e65.png)
 
